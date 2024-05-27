@@ -3,3 +3,7 @@ Determine factors that affect customers' decisions to subscribe to a bank term d
 
 Dataset taken from Kaggle:
 https://www.kaggle.com/datasets/prakharrathi25/banking-dataset-marketing-targets 
+
+# File concent
+View my SQL code on MySQL Workbench => MySQL_analysis_database.sql
+View the results I compile after analyzing the data with MySQL => MySQL_result_analysis.csv
