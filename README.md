@@ -12,3 +12,7 @@ View the results I compile after analyzing the data with MySQL => MySQL_result_a
 # View data visualizations
 I use Tableau to visualize the data of the file
 View dashboard 1: https://public.tableau.com/views/Kathy_Tran_Bank_Term_Deposit_Project/Dashboard1?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link 
+
+View dashboard 2: https://public.tableau.com/app/profile/kathy.tran3996/viz/Kathy_Tran_Bank_Term_Deposit_Project/Dashboard2?publish=yes
+
+View dashboard 3: https://public.tableau.com/app/profile/kathy.tran3996/viz/Kathy_Tran_Bank_Term_Deposit_Project/Dashboard3?publish=yes
