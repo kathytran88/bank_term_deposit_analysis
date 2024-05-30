@@ -26,3 +26,5 @@ I use Python:
 - Calculate general statistics with Numpy
 - Generate a scatterplot with Matplotlib
 - Create a linear regression model with Sklearn
+
+View my Python code => python_analysis.ipynb
