@@ -14,7 +14,8 @@ I use Python:
 - Create a linear regression model with Sklearn
 
 View my Python code => python_analysis.ipynb
-*It might take a few seconds to load the Python code
+
+*It might take a few seconds to load the Python code*
 
 # View SQL analysis
 View my SQL code on MySQL Workbench => MySQL_analysis_Database.sql
