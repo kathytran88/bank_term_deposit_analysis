@@ -21,4 +21,8 @@ View dashboard 2: https://public.tableau.com/app/profile/kathy.tran3996/viz/Kath
 View dashboard 3: https://public.tableau.com/app/profile/kathy.tran3996/viz/Kathy_Tran_Bank_Term_Deposit_Project/Dashboard3?publish=yes
 
 # View Python Linear Regression Model
-I use Python to 
+I use Python:
+- To clean data with Pandas
+- Calculate general statistics with Numpy
+- Generate a scatterplot with Matplotlib
+- Create a linear regression model with Sklearn
