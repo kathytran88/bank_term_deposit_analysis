@@ -1,10 +1,12 @@
 # Project Overview
-Determine factors that affect customers' decisions to subscribe to a bank term deposit by analyzing the results of phone calls to 4521 customers by a Portuguese bank.
+- Analyze the information regarding 4521 customers by a Portuguese bank
+- Identify general trends and characteristics of this sample data
+- Determine factors affecting their decision to subscribe to the bank's term deposit 
 
 Dataset taken from Kaggle:
 https://www.kaggle.com/datasets/prakharrathi25/banking-dataset-marketing-targets 
 
-# File concent
+# View SQL analysis
 View my SQL code on MySQL Workbench => MySQL_analysis_Database.sql
 
 View the results I compile after analyzing the data with MySQL => MySQL_result_analysis.csv
@@ -17,3 +19,6 @@ View dashboard 1: https://public.tableau.com/views/Kathy_Tran_Bank_Term_Deposit_
 View dashboard 2: https://public.tableau.com/app/profile/kathy.tran3996/viz/Kathy_Tran_Bank_Term_Deposit_Project/Dashboard2?publish=yes
 
 View dashboard 3: https://public.tableau.com/app/profile/kathy.tran3996/viz/Kathy_Tran_Bank_Term_Deposit_Project/Dashboard3?publish=yes
+
+# View Python Linear Regression Model
+I use Python to 
