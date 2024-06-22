@@ -6,17 +6,6 @@
 Dataset taken from Kaggle:
 https://www.kaggle.com/datasets/prakharrathi25/banking-dataset-marketing-targets 
 
-# View Python Linear Regression Model
-I use Python:
-- To clean data with Pandas
-- Calculate general statistics with Numpy
-- Generate a scatterplot with Matplotlib
-- Create a linear regression model with Sklearn
-
-View my Python code => python_analysis.ipynb
-
-*It might take a few seconds to load the Python code*
-
 # View SQL analysis
 View my SQL code on MySQL Workbench => MySQL_analysis_Database.sql
 
