@@ -29,7 +29,7 @@ def index():
         prediction_text = 'Yes (will subscribe to term deposit)' if prediction[0] == 1 else 'No (will not subscribe to term deposit)'
     
     # Load the SQL file content
-    path_to_file = '/Users/nguyenthang/Downloads/kathy/bank_term_deposit_analysis/sql_analysis.sql'
+    path_to_file = '../sql_analysis.sql'
     sql_content = None
     if os.path.exists(path_to_file):
         with open(path_to_file, 'r') as file:
@@ -38,7 +38,7 @@ def index():
         sql_content = "File inaccessible."
     
     # Load csv file 
-    path_to_csv = '/Users/nguyenthang/Downloads/kathy/bank_term_deposit_analysis/SQL_results.csv'
+    path_to_csv = '../SQL_results.csv'
     csv_content = None
     if os.path.exists(path_to_csv):
         df = pd.read_csv(path_to_csv)
