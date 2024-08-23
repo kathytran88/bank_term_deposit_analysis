@@ -29,6 +29,7 @@
                 <ul>
                     <li><a class="page-header__nav-link js-anchor js-link is-active" href="#logistic">Logistic Regression model</a></li>
                     <li><a class="page-header__nav-link js-anchor js-link" href="#dashboard">Visualization Dashboard</a></li>
+                    <li><a class="page-header__nav-link js-anchor js-link" href="#sql">SQL Analysis</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,10 +45,13 @@
 
         <!-- logistic regression model-->
     <section class="team">
-        <h2 class="team__title" id="logistic">Logistic Regression Model</h2>
+        <div class="team__title">
+            <h2 class="team__title" id="logistic">Logistic Regression Model</h2>
+            <h3>Built a binary classification model to predict whether a customer will subscribe to a bank's term deposit using their age and the balance of their account</h3>
+        </div>
         <div id="logistic_container">
             <div class="form-container">
-                <h2>Account Information</h2>
+                <h2>Customer Information</h2>
                 <form action="#" method="post">
                     <div class="form-group">
                         <label for="age">Age:</label>
@@ -62,6 +66,7 @@
                         <input type="submit" value="Predict">
                     </div>
                 </form>
+    <h3>Prediction:</h3>
                 {% if prediction_text %}
     <h3 class="predict_text">{{ prediction_text }}</h3>
     {% endif %}
@@ -83,9 +88,9 @@
         });
       </script>
 
-    <!-- $Portfolio section-->
-    <section class="portfolio js-portfolio" id="dashboard">
-        <h2 class="promo__title">Visualization Dashboards</h2>
+    <!-- Dashboard section-->
+    <section class="portfolio js-portfolio">
+        <h2 class="dashboard__title" id="dashboard">Visualization Dashboards</h2>
         <h3 class = 'dashboard_title'>Dashboard 1</h3>
         <div class="portfolio__inner">
             <div class='tableauPlaceholder' id='viz1724341311326' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ka&#47;Kathy_Tran_Bank_Term_Deposit_Project&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Kathy_Tran_Bank_Term_Deposit_Project&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ka&#47;Kathy_Tran_Bank_Term_Deposit_Project&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='fr-FR' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1724341311326');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1527px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
@@ -104,11 +109,268 @@
     <div class='tableauPlaceholder' id='viz1724349427825' style='position: relative'><noscript><a href='#'><img alt='Dashboard 3 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ka&#47;Kathy_Tran_Bank_Term_Deposit_Project&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Kathy_Tran_Bank_Term_Deposit_Project&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ka&#47;Kathy_Tran_Bank_Term_Deposit_Project&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='fr-FR' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1724349427825');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1277px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 </div>
 </section>
-
+<!--SQL-->
+<div class="sql_containter">
+    <h1 class="sql_title" id='sql'>SQL Analysis</h1>
+</div>
+<a class="promo__btn" href="https://github.com/kathytran88/bank_term_deposit_analysis">View Code</a>
+<div class="content-wrapper">
+    <div class="sql2">
+        <h2>SQL Queries</h2>
+        <!--
+        <pre><code>{{ sql_content | safe }}</code></pre>
+    -->
+    <pre>
+        SELECT * FROM bank_schema.bank_targets;
+        
+        -- Total number of rows
+        SELECT COUNT(age) FROM bank_schema.bank_targets;
+        
+        -- Age distribution statistics
+        SELECT MIN(age) AS min_age, 
+               MAX(age) AS max_age, 
+               AVG(age) AS mean_age, 
+               MAX(age) - MIN(age) AS range_age 
+        FROM bank_schema.bank_targets;
+        
+        -- Occupation distribution statistics
+        SELECT job, 
+               COUNT(job) AS number_of_people_with_this_job 
+        FROM bank_schema.bank_targets 
+        GROUP BY job 
+        ORDER BY COUNT(job) DESC;
+        
+        -- Retrieve the number of unique occupations
+        SELECT COUNT(DISTINCT job) 
+        FROM bank_schema.bank_targets;
+        
+        -- Calculate percentages of each occupation
+        SELECT (969 / COUNT(*)) * 100, 
+               (946 / COUNT(*)) * 100, 
+               (768 / COUNT(*)) * 100, 
+               (478 / COUNT(*)) * 100, 
+               (417 / COUNT(*)) * 100, 
+               (230 / COUNT(*)) * 100, 
+               (183 / COUNT(*)) * 100, 
+               (168 / COUNT(*)) * 100, 
+               (128 / COUNT(*)) * 100, 
+               (112 / COUNT(*)) * 100, 
+               (84 / COUNT(*)) * 100, 
+               (38 / COUNT(*)) * 100 
+        FROM bank_schema.bank_targets;
+        
+        -- Marital status statistics
+        SELECT marital, 
+               COUNT(marital) AS number_of_people 
+        FROM bank_schema.bank_targets 
+        GROUP BY marital;
+        
+        -- Calculate percentages of customers in each marital status
+        SELECT (2797 / COUNT(*)) * 100, 
+               (1196 / COUNT(*)) * 100, 
+               (528 / COUNT(*)) * 100 
+        FROM bank_schema.bank_targets;
+        
+        -- Education statistics
+        UPDATE bank_schema.bank_targets 
+        SET education = 'secondary' 
+        WHERE education = 'unknown';
+        
+        SELECT education, 
+               COUNT(education) AS number_of_people 
+        FROM bank_schema.bank_targets 
+        GROUP BY education;
+        
+        -- Calculate percentages of customers in each education level
+        SELECT (678 / COUNT(*)) * 100, 
+               (2493 / COUNT(*)) * 100, 
+               (1350 / COUNT(*)) * 100 
+        FROM bank_schema.bank_targets;
+        
+        -- Default rate statistics
+        SELECT default_rate, 
+               COUNT(default_rate) AS number_of_people 
+        FROM bank_schema.bank_targets 
+        GROUP BY default_rate;
+        
+        -- Calculate percentages of customers for each default rate
+        SELECT (4445 / COUNT(*)) * 100 AS `No_%`, 
+               (76 / COUNT(*)) * 100 AS `Yes_%` 
+        FROM bank_schema.bank_targets;
+        
+        -- Balance statistics
+        SELECT MIN(balance) AS min, 
+               MAX(balance) AS max, 
+               AVG(balance) AS mean, 
+               (MAX(balance) - MIN(balance)) AS `range` 
+        FROM bank_schema.bank_targets;
+        
+        -- Housing statistics
+        SELECT housing, 
+               COUNT(housing) AS num_people 
+        FROM bank_schema.bank_targets 
+        GROUP BY housing;
+        
+        -- Calculate percentages of customers for each housing category
+        SELECT (1962 / COUNT(*)) * 100 AS `No_%`, 
+               (2559 / COUNT(*)) * 100 AS `Yes_%` 
+        FROM bank_schema.bank_targets;
+        
+        -- Loan statistics
+        SELECT loan, 
+               COUNT(loan) AS num_loan 
+        FROM bank_schema.bank_targets 
+        GROUP BY loan;
+        
+        -- Calculate percentages of customers for each loan category
+        SELECT (3830 / COUNT(*)) * 100 AS `No_%`, 
+               (691 / COUNT(*)) * 100 AS `Yes_%` 
+        FROM bank_schema.bank_targets;
+        
+        -- Last contact month analysis
+        SELECT `month`, 
+               COUNT(`month`) 
+        FROM bank_schema.bank_targets 
+        GROUP BY `month` 
+        ORDER BY COUNT(`month`);
+        
+        -- Calculate percentages of customers for each month
+        SELECT (20 / COUNT(*)) * 100 AS december, 
+               (49 / COUNT(*)) * 100 AS march, 
+               (52 / COUNT(*)) * 100 AS september, 
+               (80 / COUNT(*)) * 100 AS october, 
+               (148 / COUNT(*)) * 100 AS january, 
+               (222 / COUNT(*)) * 100 AS february, 
+               (293 / COUNT(*)) * 100 AS april, 
+               (389 / COUNT(*)) * 100 AS november, 
+               (531 / COUNT(*)) * 100 AS june, 
+               (633 / COUNT(*)) * 100 AS august, 
+               (706 / COUNT(*)) * 100 AS july, 
+               (1398 / COUNT(*)) * 100 AS may 
+        FROM bank_schema.bank_targets;
+        
+        -- Duration of phone call analysis
+        SELECT MIN(duration) AS min_duration, 
+               MAX(duration) AS max_duration, 
+               AVG(duration) AS average_duration, 
+               MAX(duration) - MIN(duration) AS range_duration 
+        FROM bank_schema.bank_targets;
+        
+        -- Number of contacts performed for each client
+        SELECT MIN(campaign) AS min_contacts, 
+               MAX(campaign) AS max_contacts, 
+               AVG(campaign) AS average_contacts 
+        FROM bank_schema.bank_targets;
+        
+        -- Number of days that passed by after the client was last contacted from a previous campaign
+        -- ALTER TABLE bank_schema.bank_targets RENAME COLUMN pdays TO days_passed;
+        SELECT COUNT(days_passed) 
+        FROM bank_schema.bank_targets 
+        WHERE days_passed = -1;
+        
+        SELECT AVG(days_passed) 
+        FROM bank_schema.bank_targets 
+        WHERE days_passed != -1;
+        
+        -- Number of contacts performed before this campaign for each customer 
+        -- ALTER TABLE bank_schema.bank_targets RENAME COLUMN previous TO previous_contacts;
+        SELECT AVG(previous_contacts) 
+        FROM bank_schema.bank_targets;
+        
+        SELECT previous_contacts, 
+               COUNT(previous_contacts) 
+        FROM bank_schema.bank_targets 
+        GROUP BY previous_contacts 
+        ORDER BY COUNT(previous_contacts) DESC;
+        
+        -- Outcome of the previous campaign
+        -- ALTER TABLE bank_schema.bank_targets RENAME COLUMN poutcome TO previous_campaign_outcome;
+        SELECT previous_campaign_outcome, 
+               COUNT(previous_campaign_outcome) AS count 
+        FROM bank_schema.bank_targets 
+        GROUP BY previous_campaign_outcome 
+        ORDER BY COUNT(previous_campaign_outcome);
+        
+        -- Calculate percentages
+        SELECT (129 / COUNT(*)) * 100 AS success, 
+               (490 / COUNT(*)) * 100 AS failure, 
+               (197 / COUNT(*)) * 100 AS other, 
+               (3705 / COUNT(*)) * 100 AS `unknown` 
+        FROM bank_schema.bank_targets;
+        
+        -- Customers' responses to term deposit
+        SELECT y, 
+               COUNT(y) AS number_of_customers 
+        FROM bank_schema.bank_targets 
+        GROUP BY y;
+        
+        -- Housing ownership
+        SELECT housing, 
+               COUNT(housing) 
+        FROM bank_schema.bank_targets 
+        WHERE y = 'yes' 
+        GROUP BY housing;
+        
+        SELECT (301 / 521) * 100 AS `no`, 
+               (220 / 521) * 100 AS `yes`;
+        
+        SELECT (93 / 521) * 100 AS may, 
+               (61 / 521) * 100 AS july, 
+               (79 / 521) * 100 AS aug, 
+               (55 / 521) * 100 AS june, 
+               (39 / 521) * 100 AS november, 
+               (56 / 521) * 100 AS april, 
+               (38 / 521) * 100 AS february, 
+               (16 / 521) * 100 AS january, 
+               (37 / 521) * 100 AS october, 
+               (17 / 521) * 100 AS september, 
+               (21 / 521) * 100 AS march, 
+               (9 / 521) * 100 AS december;
+        
+        -- Analyzing customers who responded "Yes" to term deposit
+        
+        -- Age distribution
+        SELECT MIN(age), 
+               MAX(age), 
+               AVG(age), 
+               MAX(age) - MIN(age) AS `range` 
+        FROM bank_schema.bank_targets 
+        WHERE y = 'yes';
+        
+        -- Occupation
+        SELECT COUNT(DISTINCT job) 
+        FROM bank_schema.bank_targets 
+        WHERE y = 'yes';
+        
+        SELECT job, 
+               COUNT(job) 
+        FROM bank_schema.bank_targets 
+        WHERE y = 'yes' 
+        GROUP BY job 
+        ORDER BY COUNT(job) DESC;
+        
+        SELECT (131 / 521) * 100 AS management, 
+               (83 / 521) * 100 AS blue_collar, 
+               (69 / 521) * 100 AS technician, 
+               (58 / 521) * 100 AS administration, 
+               (54 / 521) * 100 AS services, 
+               (38 / 521) * 100 AS retired, 
+               (20 / 521) * 100 AS sel_employed, 
+               (19 / 521) * 100 AS entrepreneur, 
+               (15 / 521) * 100 AS housemaid, 
+               (14 / 521) * 100 AS student, 
+               (10 / 521) * 100 AS unemployed, 
+               (11 / 521) * 100 AS unknown;
+            </pre>
+    </div>
+    <div class="sql2">
+        <h2>SQL results</h2>
+        {{ csv_content | safe }}
+    </div>
+</div>
 <div class="footer">
     <div>
    <p>Kathy Tran</p>
-</div>
 </div>
 </body>
 
