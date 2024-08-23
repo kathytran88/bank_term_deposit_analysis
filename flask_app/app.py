@@ -7,8 +7,13 @@ import pandas as pd
 
 app = Flask(__name__)
 
-with open('logistic.pkl', 'rb') as file:
-    logistic_model = pickle.load(file)
+import os
+
+# Absolute path to the file
+file_path = os.path.join(os.path.dirname(__file__), 'logistic.pkl')
+
+with open(file_path, 'rb') as file:
+    model = pickle.load(file)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
