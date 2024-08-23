@@ -13,7 +13,7 @@ import os
 file_path = os.path.join(os.path.dirname(__file__), 'logistic.pkl')
 
 with open(file_path, 'rb') as file:
-    model = pickle.load(file)
+    logistic_model = pickle.load(file)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
