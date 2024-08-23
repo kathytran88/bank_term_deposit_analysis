@@ -5,17 +5,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Home | Design studio template</title>
+    <title>Kathy Tran Project</title>
     <meta name="description" content="Page-specific description">
     <meta name="keywords" content="Page-specific keywords">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="shortcut icon" href="static/images/favicons/favicon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="static/images/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon-precomposed" href="static/images/favicons/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="../static/images/favicons/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../static/images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="../static/images/favicons/apple-touch-icon-precomposed.png">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="static/css/screen.min.css">
-    <link rel="stylesheet" href="static/css/custom.min.css">
+    <link rel="stylesheet" href="../static/css/screen.min.css">
+    <link rel="stylesheet" href="../static/css/custom.min.css">
 </head>
 
 <body>
@@ -39,15 +39,49 @@
         <h2 class="promo__title">Bank Term Deposit Analysis</h2>
         <!--<p class="promo__descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> -->
         <a class="promo__btn" href="https://github.com/kathytran88/bank_term_deposit_analysis">View Code</a>
-        <a class="promo__go-next js-anchor" href="#portfolio">Scroll down</a>
+        <!--<a class="promo__go-next js-anchor" href="#logistic">Scroll down</a> -->
     </section>
 
-        <!-- $Team section-->
-        <section class="team" id="logistic">
-            <div class="team__inner">
-                <h2 class="team__title">Logistic Regression Model</h2>
+        <!-- logistic regression model-->
+    <section class="team">
+        <h2 class="team__title" id="logistic">Logistic Regression Model</h2>
+        <div id="logistic_container">
+            <div class="form-container">
+                <h2>Account Information</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="18" max="100" required>
+                        <span id="ageError" style="color: red; display: none;">Please enter an age between 18 and 100.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="balance">Balance Account (in dollars):</label>
+                        <input type="number" id="balance" name="balance" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Predict">
+                    </div>
+                </form>
+                {% if prediction_text %}
+    <h3 class="predict_text">{{ prediction_text }}</h3>
+    {% endif %}
             </div>
-        </section>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+          var ageInput = document.getElementById("age");
+          var ageError = document.getElementById("ageError");
+      
+          if (ageInput.value < 18 || ageInput.value > 100) {
+            ageError.style.display = "inline";
+            event.preventDefault(); // Prevent form submission
+          } else {
+            ageError.style.display = "none";
+          }
+        });
+      </script>
 
     <!-- $Portfolio section-->
     <section class="portfolio js-portfolio" id="dashboard">
