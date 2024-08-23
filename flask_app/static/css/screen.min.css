@@ -70,6 +70,19 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     padding: 10px;
 }
 
+.team__title2{
+    font-size:35px;
+    font-weight:400;
+    color:white;
+    text-transform:capitalize;
+    text-align: center;
+    padding: 50px;
+}
+
+.team__title2 > h3 {
+    padding-bottom: 20px
+}
+
 .team__title > h3 {
     padding-left: 300px;
     padding-right: 300px;
@@ -129,6 +142,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     font-size: 60px;
 }
 
+.dashboard_title1 {
+    font-size: 30px;
+    padding: 30px;
+    text-decoration: underline;
+}
+
 /* SQL */
 .sql_containter {
     text-align: center;
@@ -162,7 +181,7 @@ table.csv-table th {
 
 .sql2 {
     padding: 40px;
-    width: 1200px;
+    width: 1500px;
     text-align: center
 }
 
@@ -185,10 +204,26 @@ table.csv-table th {
 @media only screen and (max-width: 480px) {
     /* CSS rules for phones */
         .portfolio__inner{align-items: center; margin: 0}
+        .sql2 {
+            display: block;
+            width: 100%;
+        }
     
+        .promo__title{
+            padding-top: 200px
+        }
   }
 
   @media only screen and (max-width: 768px) {
     /* CSS rules for iPads and tablets */
     .portfolio__inner{align-items: center; margin: 5%}
+
+    .sql2 {
+        width: 48%; /* Adjust width to fit two columns */
+        display: inline-block; /* Allow side-by-side display */
+        vertical-align: top; /* Align items to the top */
+    }
+    #sql_content_container {
+        margin-right: 2%; /* Space between columns */
+    }
   }
