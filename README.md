@@ -1,4 +1,4 @@
-# Hosted on AWS EC2: (Live Server)[http://ec2-18-224-16-210.us-east-2.compute.amazonaws.com]
+# Hosted on AWS EC2: [Live Server](http://ec2-18-224-16-210.us-east-2.compute.amazonaws.com)
 # Project Overview
 - Analyze the information regarding 4521 customers by a Portuguese bank
 - Identify general trends and characteristics of this sample data
