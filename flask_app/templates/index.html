@@ -27,8 +27,8 @@
             </div>
             <nav class="page-header__nav js-nav">
                 <ul>
-                    <li><a class="page-header__nav-link js-anchor js-link is-active" href="#logistic">Logistic Regression model</a></li>
-                    <li><a class="page-header__nav-link js-anchor js-link" href="#dashboard">Visualization Dashboard</a></li>
+                    <li><a class="page-header__nav-link js-anchor js-link is-active" href="#logistic">Logistic Regression</a></li>
+                    <li><a class="page-header__nav-link js-anchor js-link" href="#dashboard">Visualization Dashboards</a></li>
                     <li><a class="page-header__nav-link js-anchor js-link" href="#sql">SQL Analysis</a></li>
                 </ul>
             </nav>
@@ -48,7 +48,15 @@
         <div class="team__title">
             <h2 class="team__title" id="logistic">Logistic Regression Model</h2>
             <h3>Built a binary classification model to predict whether a customer will subscribe to a bank's term deposit using their age and the balance of their account</h3>
+
         </div>
+        <div class="prediction-section">
+              <h2>Prediction:</h2>
+              {% if prediction_text %}
+                  <h3 class="predict_text">{{ prediction_text }}</h3>
+              {% endif %}
+          </div>
+
         <div id="logistic_container">
             <div class="form-container">
                 <h2>Customer Information</h2>
@@ -62,14 +70,12 @@
                         <label for="balance">Balance Account (in dollars):</label>
                         <input type="number" id="balance" name="balance" step="0.01" required>
                     </div>
+                    <div id="errorMessage"></div>
                     <div class="form-group">
                         <input type="submit" value="Predict">
                     </div>
                 </form>
-    <h3>Prediction:</h3>
-                {% if prediction_text %}
-    <h3 class="predict_text">{{ prediction_text }}</h3>
-    {% endif %}
+    
             </div>
         </div>
 <!--
@@ -377,15 +383,21 @@
                (11 / 521) * 100 AS unknown;
             </pre>
     </div>
+
     <div class="sql2" id="sql_content_container">
-        <h2>SQL results</h2>
-        {{ csv_content | safe }}
-    </div>
+       <h2>SQL results</h2>
+       {% if csv_content %}
+           {{ csv_content | safe }}
+       {% else %}
+           <p>No data available</p>
+       {% endif %}
+   </div>
 </div>
 <div class="footer">
     <div>
    <p>Kathy Tran</p>
 </div>
+
 </body>
 
 </html>
