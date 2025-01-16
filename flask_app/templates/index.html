@@ -28,8 +28,12 @@
             <nav class="page-header__nav js-nav">
                 <ul>
                     <li><a class="page-header__nav-link js-anchor js-link is-active" href="#logistic">Logistic Regression</a></li>
+
                     <li><a class="page-header__nav-link js-anchor js-link" href="#dashboard">Visualization Dashboards</a></li>
+
                     <li><a class="page-header__nav-link js-anchor js-link" href="#sql">SQL Analysis</a></li>
+
+                    <li><a class="page-header__nav-link js-anchor js-link" href="https://github.com/kathytran88/bank_term_deposit_analysis">View code on Github</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,16 +42,13 @@
     <!-- $Promo section-->
     <section class="promo js-jumbo" id="home">
         <h2 class="promo__title">Bank Term Deposit Analysis</h2>
-        <!--<p class="promo__descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> -->
-        <a class="promo__btn" href="https://github.com/kathytran88/bank_term_deposit_analysis">View Code</a>
-        <!--<a class="promo__go-next js-anchor" href="#logistic">Scroll down</a> -->
     </section>
 
         <!-- logistic regression model-->
     <section class="team">
         <div class="team__title">
             <h2 class="team__title" id="logistic">Logistic Regression Model</h2>
-            <h3>Built a binary classification model to predict whether a customer will subscribe to a bank's term deposit using their age and the balance of their account</h3>
+            <h3 class='subheading'>Built a binary classification model to predict whether a customer will subscribe to a bank's term deposit using their age and account balance</h3>
 
         </div>
         <div class="prediction-section">
@@ -63,8 +64,8 @@
                 <form action="#" method="post">
                     <div class="form-group">
                         <label for="age">Age:</label>
-                        <input type="number" id="age" name="age" min="18" max="100" required>
-                        <span id="ageError" style="color: red; display: none;">Please enter an age between 18 and 100.</span>
+                        <input type="number" id="age" name="age" min="18" max="95" required>
+                        <span id="ageError" style="color: red; display: none;">Please enter an age between 18 and 95.</span>
                     </div>
                     <div class="form-group">
                         <label for="balance">Balance Account (in dollars):</label>
@@ -78,13 +79,53 @@
     
             </div>
         </div>
-<!--
-        <div class="team__title2">
-              <h2 class="team__title" id="logistic">Model Accuracy</h2>
-              <h3>Model score = ~88.5%</h3>
-              <img src="../static/images/cm.png" alt="Confusion Matrix">
+
+
+        <!--confusion matrix-->
+    <div class="container">
+       <div class="image-grid">
+           <div class="image-item">
+               <h2 class="image-title">Confusion Matrix for model without using SMOTE</h2>
+               <img src="{{ url_for('static', filename='cm_nosmote.png') }}" alt="cm without smote">
+               <h4 class="img-score">Model score = 88.5%</h4>
+               <p class="image-description">- The model predicts everything as “no” (0)<br><br>
+                     - Because the data are imbalanced and most labels are actually “no,” the model still gets a deceptively high accuracy by doing almost nothing meaningful.
+
+              </p>
+           </div>
+           
+           <div class="image-item">
+               <h2 class="image-title">Confusion Matrix for model built with SMOTE</h2>
+               <img src="{{ url_for('static', filename='cm_smote.png') }}" alt="cm with smote">
+               <h4 class="img-score">Model score = 65%</h4>
+               <p class="image-description">- I used SMOTE to balance the dataset by oversampling the minority class<br><br>- The model achieves a 65% accuracy, lower than before applying SMOTE.<br><br>
+              - However, this is acceptable because the new model improved recall for the minority class & actually "learned" to predict instead of assigning 0 ("no") to all cases for the sake of high accuracy score.</p>
+           </div>
        </div>
--->
+   </div>
+
+   <div class="container">
+       <div class="image-grid">
+           <div class="image-item">
+               <h2 class="image-title">Precision & Recall</h2>
+               <img src="{{ url_for('static', filename='pr_nosmote.png') }}" alt="pr without smote">
+               <p class="image-description">- All of them are 0 because the model never predicts 1 (no true positives).<br><br>- Meanwhile:
+
+For class 0, the metrics are high because everything is predicted as 0, and the vast majority of actual labels are 0.
+              </p>
+           </div>
+           
+           <div class="image-item">
+               <h2 class="image-title">Precision & Recall</h2>
+               <img src="{{ url_for('static', filename='pr_smote.png') }}" alt="pr with smote">
+               <p class="image-description">- The new model correctly predicts 41% of the positive class (recall)<br><br>
+                    - Only 14% of all of the model's predicted positives are correct (precision).<br><br>
+                    => With SMOTE, the model is now able to detect the minority class (higher recall than a model that predicts “0” always)
+             </p>
+           </div>
+       </div>
+   </div>
+
     </section>
 
     <script>
@@ -92,7 +133,7 @@
           var ageInput = document.getElementById("age");
           var ageError = document.getElementById("ageError");
       
-          if (ageInput.value < 18 || ageInput.value > 100) {
+          if (ageInput.value < 18 || ageInput.value > 95) {
             ageError.style.display = "inline";
             event.preventDefault(); // Prevent form submission
           } else {
