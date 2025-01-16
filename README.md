@@ -11,11 +11,11 @@ Dataset taken from [Kaggle](https://www.kaggle.com/datasets/prakharrathi25/banki
 - Model after the training set got balanced with SMOTE => logistic_regression_with_SMOTE.ipynb
 
 ## View SQL analysis
-View my SQL code on MySQL Workbench => MySQL_analysis_Database.sql
+- View my SQL code on MySQL Workbench => MySQL_analysis_Database.sql
 
-View the results I compile after analyzing the data with MySQL => MySQL_result_analysis.csv
+- View the results I compile after analyzing the data with MySQL => MySQL_result_analysis.csv
 
-## View data visualizations
+## View visualization dashboards
 I use Tableau to visualize data
 
 View dashboard 1: https://public.tableau.com/views/Kathy_Tran_Bank_Term_Deposit_Project/Dashboard1?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link 
