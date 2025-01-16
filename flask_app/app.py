@@ -7,7 +7,6 @@ import pandas as pd
 
 app = Flask(__name__)
 
-# Absolute path to the file
 file_path = os.path.join(os.path.dirname(__file__), 'logistic.pkl')
 print(f"Loading model from: {file_path}")
 
@@ -22,14 +21,12 @@ except FileNotFoundError:
 def index():
     prediction_text = None
 
-    # Handle the form submission for the Logistic Regression model
     if request.method == 'POST':
         age = float(request.form['age'])
         balance = float(request.form['balance'])
 
         input_data = np.array([[age, balance]])
 
-        # Assuming you have a scaler saved; otherwise, this step should be adapted
         scaler = StandardScaler()
         input_data = scaler.fit_transform(input_data)
 
@@ -39,7 +36,6 @@ def index():
         else:
             prediction_text = 'Model not found'
 
-    # Load the SQL file content
     path_to_file = 'sql_analysis.sql' 
     sql_content = None
     if os.path.exists(path_to_file):
@@ -49,14 +45,12 @@ def index():
         sql_content = "File inaccessible."
 
 #############################################
-   # Get the directory containing app.py (flask_app directory)
     FLASK_APP_DIR = os.path.dirname(os.path.abspath(__file__))
-    # Get the parent (root) directory
+    
     ROOT_DIR = os.path.dirname(FLASK_APP_DIR)
-    # Construct path to CSV in root directory
+    #
     csv_path = os.path.join(ROOT_DIR, 'SQL_results.csv')
 
-    # Add debug prints
     print(f"Flask app directory: {FLASK_APP_DIR}")
     print(f"Root directory: {ROOT_DIR}")
     print(f"Looking for CSV at: {csv_path}")
@@ -85,7 +79,7 @@ def index():
     else:
         print("CSV content is None")
 
-    # Render the template with both prediction and SQL content
+    
     return render_template('index.html', sql_content=sql_content, prediction_text=prediction_text, csv_content=csv_content)
 
 if __name__ == '__main__':
