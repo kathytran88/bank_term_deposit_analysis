@@ -1,5 +1,5 @@
 # Hosted on AWS EC2: [Live Server](http://ec2-18-224-16-210.us-east-2.compute.amazonaws.com)
-# Project Overview
+## Project Overview
 - Analyze the information regarding 4521 customers by a Portuguese bank
 - Identify general trends and characteristics of this sample data
 - Determine factors affecting their decision to subscribe to the bank's term deposit 
@@ -7,12 +7,15 @@
 Dataset taken from Kaggle:
 https://www.kaggle.com/datasets/prakharrathi25/banking-dataset-marketing-targets 
 
-# View SQL analysis
+## View Machine Learning model
+=> logistic_regression_withSMOTE.ipynb
+
+## View SQL analysis
 View my SQL code on MySQL Workbench => MySQL_analysis_Database.sql
 
 View the results I compile after analyzing the data with MySQL => MySQL_result_analysis.csv
 
-# View data visualizations
+## View data visualizations
 I use Tableau to visualize data
 
 View dashboard 1: https://public.tableau.com/views/Kathy_Tran_Bank_Term_Deposit_Project/Dashboard1?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link 
