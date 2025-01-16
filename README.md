@@ -4,12 +4,11 @@
 - Identify general trends and characteristics of this sample data
 - Determine factors affecting their decision to subscribe to the bank's term deposit 
 
-Dataset taken from Kaggle:
-https://www.kaggle.com/datasets/prakharrathi25/banking-dataset-marketing-targets 
+Dataset taken from [Kaggle](https://www.kaggle.com/datasets/prakharrathi25/banking-dataset-marketing-targets) 
 
 ## View Machine Learning model
-Model before using SMOTE => logistic_regression_no_SMOTE.ipynb
-Model after the training set got balanced with SMOTE => logistic_regression_with_SMOTE.ipynb
+- Model before using SMOTE => logistic_regression_no_SMOTE.ipynb <br>
+- Model after the training set got balanced with SMOTE => logistic_regression_with_SMOTE.ipynb
 
 ## View SQL analysis
 View my SQL code on MySQL Workbench => MySQL_analysis_Database.sql
