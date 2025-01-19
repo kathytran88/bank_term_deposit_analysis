@@ -503,9 +503,10 @@ table.csv-table th {
 }
 
 /* Additional fixes for very small screens */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
     .promo__title {
         font-size: 20px;
+        padding-top: 20px;
     }
     
     .form-container {
@@ -515,9 +516,13 @@ table.csv-table th {
     .form-group input {
         padding: 8px;
     }
+
+    body {
+        margin-top: 0px;
+    }
 }
 
-/*mobile */
+/*tablet */
 @media screen and (max-width: 768px) {
     body {
         padding-top: 0;
@@ -525,7 +530,7 @@ table.csv-table th {
 }
 
 /* desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1030px) {
     
     body {
       margin-top: 100px; 
