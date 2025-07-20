@@ -15,11 +15,4 @@ Dataset taken from [Kaggle](https://www.kaggle.com/datasets/prakharrathi25/banki
 
 - View the results I compile after analyzing the data with MySQL => MySQL_result_analysis.csv
 
-## View visualization dashboards
-I use Tableau to visualize data
 
-View dashboard 1: https://public.tableau.com/views/Kathy_Tran_Bank_Term_Deposit_Project/Dashboard1?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link 
-
-View dashboard 2: https://public.tableau.com/app/profile/kathy.tran3996/viz/Kathy_Tran_Bank_Term_Deposit_Project/Dashboard2?publish=yes
-
-View dashboard 3: https://public.tableau.com/app/profile/kathy.tran3996/viz/Kathy_Tran_Bank_Term_Deposit_Project/Dashboard3?publish=yes
